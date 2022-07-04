@@ -55,7 +55,7 @@ ROOT_URLCONF = 'Formation.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ["/xampp/htdocs/Projets_Python/Django/myAPP/Formation/Formation/templates"],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

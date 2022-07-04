@@ -8,7 +8,9 @@ class Products(models.Model):
     description = models.TextField()
     price  = models.DecimalField(max_digits=100000, decimal_places=2)
     image = models.ImageField(upload_to='images',blank=True)
-    slug = models.SlugField(null=True)
+    # SlugField permet de gerer les espace au niveau de l'url ex orange product = orange-product
+    # null=True permet de donner la valeur null aux autres tables qui seront ajouter dans le model
+    slug = models.SlugField(null=True) 
     actif = models.BooleanField(default=True)
 
 
