@@ -3,7 +3,8 @@ from django.http import HttpResponse
 
 
 def home(request, *args, **kwargs):
-    return render(request, 'index.html')
+    myList = [3,44,5,32,66]
+    return render(request, 'index.html', {'list':myList})
 
 def contact(request):
     return HttpResponse("Contact me")
